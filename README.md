@@ -1,24 +1,40 @@
-# README
+# Blog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A blog application built using ruby on rails 6
 
-Things you may want to cover:
+### Instructions
 
-* Ruby version
+----
 
-* System dependencies
+* clone this repo
+* and `cd` into it
 
-* Configuration
+```$ cd social_media```
+* install ruby version manager (rvm)
+* install postgresql database (version 12 or above)
+* run postgresql
+* install node.js (version 12 and above)
+* install yarn package manager
 
-* Database creation
+* run the following commands
 
-* Database initialization
+```
+$ rvm use 2.7.1 --install
+$ gem install bundler
+$ bin/bundle install
+$ yarn install --check-files
+$ bin/bundle exec rails db:create db:migrate
+```
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+* run the tests
+```
+$ bin/bundle exec rspec
+```
 
-* Deployment instructions
+* run development server
+```
+$ bin/rails server
+```
 
-* ...
+-- enjoy the demo :)
